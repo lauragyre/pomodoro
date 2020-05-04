@@ -96,12 +96,12 @@ function getButtons(e) {
     }
     if (displayButton == 'WORK') {
         paused = false;
-        
         breakSeconds = 0;
         breakMinutes = 0;
         workMinutes = 24;
         workSeconds = 59;
-        breakColor.style.height = '100%';
+        breakColor.style.height = 0;
+        workColor.style.height = '100%';
        
         
     }
