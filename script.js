@@ -36,6 +36,8 @@ function workTimer() {
             
             if (workMinutes == 0 && workSeconds == 0) {
                 clearInterval(timer);
+                breakMinutes = 4;
+                breakSeconds = 59;
                 breakTimer();
 
             } else if (workSeconds == 0) {
@@ -70,6 +72,8 @@ function breakTimer() {
             
             if (breakMinutes == 0 && breakSeconds == 0) {
                 clearInterval(timer);
+                workMinutes = 24;
+                workSeconds = 59;
                 workTimer();
 
             } else if (breakSeconds == 0) {
