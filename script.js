@@ -14,7 +14,10 @@ let workMinutes = 24;
 let breakSeconds = 59;
 let breakMinutes = 4;
 
+
 function workTimer() {
+        
+        breakColor.style.height = 0;
         var timer = setInterval(() => {
             let minute = (workMinutes < 10) ? "0" + workMinutes: workMinutes;
             let second = (workSeconds < 10) ? "0" + workSeconds: workSeconds; 
@@ -46,8 +49,9 @@ function workTimer() {
     }
 
 function breakTimer() {
-        
+    
         var timer = setInterval(() => {
+            
             let minute = (breakMinutes < 10) ? "0" + breakMinutes: breakMinutes;
             let second = (breakSeconds < 10) ? "0" + breakSeconds: breakSeconds; 
             pausedMinutes = breakMinutes;
@@ -92,12 +96,12 @@ function getButtons(e) {
     }
     if (displayButton == 'WORK') {
         paused = false;
+        
+        breakSeconds = 0;
+        breakMinutes = 0;
         workMinutes = 24;
         workSeconds = 59;
-        breakMinutes = 0;
-        breakSeconds = 0;
-        breakColor.style.height = 0;
-        workTimer();
+        breakColor.style.height = '100%';
        
         
     }
@@ -105,10 +109,11 @@ function getButtons(e) {
         paused = false;
         breakMinutes = 4;
         breakSeconds = 59;
-        workMinutes = 0;
         workSeconds = 0;
+        workMinutes = 0;   
         workColor.style.height = 0;
-        breakTimer();
+        breakColor.style.height = '100%';
+        
        
     }
     
