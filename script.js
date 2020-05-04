@@ -97,6 +97,7 @@ function getButtons(e) {
         breakMinutes = 0;
         breakSeconds = 0;
         breakColor.style.height = 0;
+        workTimer();
        
         
     }
@@ -107,7 +108,7 @@ function getButtons(e) {
         workMinutes = 0;
         workSeconds = 0;
         workColor.style.height = 0;
-        
+        breakTimer();
        
     }
     
