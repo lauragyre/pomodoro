@@ -31,17 +31,19 @@ function workTimer() {
                 workColor.style.height = (workMinutes * 4) + (workSeconds / 15) + "%";
             }
             
-            if (workSeconds == 59 && workMinutes >= 1) {
-                workMinutes--;
-            }
+            
+            
             if (workMinutes == 0 && workSeconds == 0) {
                 clearInterval(timer);
                 breakTimer();
+
             } else if (workSeconds == 0) {
                 workSeconds = 60;
             }
+            if (workSeconds == 60 && workMinutes >= 1) {
+                workMinutes--;
 
-
+            }
         }, 1000);
     }
 
@@ -63,16 +65,17 @@ function breakTimer() {
                 breakColor.style.height = (breakMinutes * 20) + (breakSeconds / 3) + "%";
             }
         
-            if (breakSeconds == 60 && breakMinutes >= 1) {
-                breakMinutes--;
-            }
+            
             if (breakMinutes == 0 && breakSeconds == 0) {
                 clearInterval(timer);
                 workTimer();
 
             } else if (breakSeconds == 0) {
                 breakSeconds = 60;
+                breakMinutes--;
             }
+            
+
         }, 1000);
     }
 
