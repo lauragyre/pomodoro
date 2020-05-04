@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 body {
@@ -34,6 +35,7 @@ body {
     border: 10px solid white;
     display: flex;
     align-items: flex-end;
+    border-radius: 5px;
 }
 
 #worktime {
@@ -41,12 +43,14 @@ body {
     width: 100%;
     height: 100%;
     
+    
    
 }
 
 #breaktime {
     background-color:rgb(255, 117, 102);
     width: 100%;
+    
    
 }
 
@@ -58,13 +62,13 @@ body {
 
 button {
     background: White;
-    color: grey;
+    color:lightgrey;
     font-weight: bold;
     border: 0;
-    font-size: 1em;
-    padding: .5em;
+    font-size: 1.25em;
+    padding: .25em;
     width: 100px;
-    margin-bottom: 1em;
+    margin-bottom: .75em;
     clear: both;
     border-radius: 5px;
 }

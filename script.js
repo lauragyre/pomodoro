@@ -31,8 +31,6 @@ function workTimer() {
                 workColor.style.height = (workMinutes * 4) + (workSeconds / 15) + "%";
             }
             
-            
-            
             if (workMinutes == 0 && workSeconds == 0) {
                 clearInterval(timer);
                 breakTimer();
