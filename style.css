@@ -6,13 +6,16 @@
 }
 
 body {
-    background-color: lightgray;
+    background-color: white;
     margin: 10vw;
+    display: flex;
+    justify-content: center;
+    height: 450px;
 }
 
 
 #container {
-    margin-left: 40%;
+    margin auto;
     display: flex;
     height: 100vh;
  
@@ -31,8 +34,8 @@ body {
 
     height: 100%;
     width: 100%;
-    background-color: white;
-    border: 10px solid white;
+    background-color: lightgray;
+    border: 10px solid lightgray;
     display: flex;
     align-items: flex-end;
     border-radius: 5px;
@@ -55,14 +58,14 @@ body {
 }
 
 #worktext, #breaktext {
-    color: white;
+    color: lightgray;
     text-align: center;
     padding: .25em 0;
 }
 
 button {
-    background: White;
-    color:lightgrey;
+    background: lightgray;
+    color: white;
     font-weight: bold;
     border: 0;
     font-size: 1.25em;
